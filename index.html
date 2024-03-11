@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/icon3.png" type="image/x-icon">
+    <title>Radiante</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body data-bs-theme="light">
+
+  <header>
+    <nav class="navbar-expand-lg navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./assets/Cafeteria.png" alt="Logo da cafeteria" class="img-fluid logo-pequeno"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./assets/logo-mobile.png" alt="Logo da cafeteria Serenatto"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contato">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="modo-noturno">
+                    <label class="form-check-label" for="modo-noturno">Modo noturno</label>
+                  </div></a>
+              </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+      <section class="banners banner-1 d-flex flex-column justify-content-center text-center">
+        <div class="banners-titulo bg-body-secondary">
+          <h2 class="fw-bold">Sabor que aquece o coração <i class="bi bi-suit-heart"></i> </h2>
+          <p class="fw-bold">Bem-vindo à Cafeteria Radiante, onde cada gole é uma celebração dos momentos simples e deliciosos da vida..</p>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <h2 class="text-center fw-bold pb-1">Nossos serviços</h2>
+
+      
+      <div class="container d-flex justify-content-center flex-wrap">
+          <div class="card m-4" style="width: 20rem;">
+              <img src="./assets/mostruario.jpg" class="card-img-top img-fluid" alt="Balcão de padaria tradicional com alimentos diversos">
+              <div class="card-body">
+                  <h5 class="card-title py-2 fw-bold">Café & Mostruário</h5>
+                  <p class="card-text">Oferecemos uma ampla variedade de bebidas quentes, geladas, salgados e sobremesas. Uma excelente opção para quem busca um lugar tranquilo e aconchegante.</p>
+                  <a href="#" class="btn botao-padrao w-100 fw-bold" data-bs-toggle="offcanvas" data-bs-target="#canvas-1" aria-controls="offcanvasRight">Quero detalhes</a>
+              </div>
+          </div>
+      
+          <div class="card m-4" style="width: 20rem;">
+              <img src="./assets/delivery.webp" class="card-img-top img-fluid" alt="Caixa aberta armazenando comidas diversas">
+              <div class="card-body">
+                  <h5 class="card-title fw-bold">Delivery</h5>
+                  <p class="card-text">Desfrute do nosso serviço de delivery e saboreie nossos produtos no conforto do seu lar. Garantimos que cada mordida seja uma experiência memorável, mesmo à distância.</p>
+                  <a href="#" class="btn botao-padrao w-100 fw-bold mt-3" data-bs-toggle="offcanvas" data-bs-target="#canvas-3" aria-controls="offcanvasRight">Quero detalhes</a>
+              </div>
+          </div>
+      </div>
+      
+      
+      </section>
+
+      <section class="banners banner-2 d-flex flex-column justify-content-center">
+        <div class="banners-titulo bg-body-secondary text-center py-5">
+          <h2 class="fw-bold">Todos são recebidos com calor e hospitalidade.</h2>
+          <p class="fw-bold">Espaço acolhedor e inclusivo, pet friendly, onde crianças, pessoas com deficiência e profissionais encontram um ambiente aconchegante para desfrutar de momentos especiais.</p>
+        </div>
+      </section>
+
+    <section class="py-5">
+      <h2 class="fw-bold text-center pb-1">Nossos produtos</h2>
+      <div class="row mx-0">
+
+    <div class="row justify-content-center"> 
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card border-0 mx-auto btn" data-bs-toggle= "modal" data-bs-target="#modal-1" style="width: 15rem;">
+        <img src="./assets/cafe-tradicional.webp" class="card-img-top" alt="café preto">
+        <div class="card-body">
+          <p class="card-text text-center fw-bold">Bebidas Quentes</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-2" style="width: 17rem;">
+        <img src="./assets/bebida-gelada.png" class="card-img-top img-fluid" alt="Milkshake de diversos sabores">
+        <div class="card-body">
+          <p class="card-text text-center fw-bold">Bebidas Geladas</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-3" style="width: 15rem;">
+        <img src="./assets/doces.png" class="card-img-top img-fluid" alt="macaron">
+        <div class="card-body">
+          <p class="card-text text-center fw-bold">Doces</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-4"  style="width: 17rem;">
+        <img src="./assets/produtos-croissant.png" class="card-img-top img-fluid" alt="croissant recheado">
+        <div class="card-body">
+          <p class="card-text text-center fw-bold">Salgados</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+</div>
+  </section>
+
+    
+
+
+
+
+    
+
+
+
+      <section class="banners banner-3">
+      </section>
+
+      <section class="py-4 container">
+        <div class="row">
+          <div class="col-10 col-xl-8 mx-auto">
+        <div class="border border-2 rounded p-3">
+          <h3 class="fw-bold p-3">Entre em contato</h3>
+          <form id="contato">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingNome" placeholder="name@example.com">
+              <label for="floatingNome">Nome</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+              <label for="floatingEmail">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingTelefone" placeholder="name@example.com">
+              <label for="floatingTelefone">Telefone</label>
+            </div>
+
+            <select class="form-select mb-3" aria-label="Default select example">
+              <option selected>Preferência de contato</option>
+              <option value="1">WhatsApp</option>
+              <option value="2">Email</option>
+              <option value="3">Ligação</option>
+            </select>
+
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-6 text-center">
+                  <label for="nivel-satisfacao" class="form-label">Nível de satisfação</label>
+                </div>
+              </div>
+            
+              <div class="row align-items-center justify-content-center">
+                <div class="col-2 col-md-1 text-end">
+                  <span class="input-group-text"><i class="bi bi-emoji-smile"></i></span>
+                </div>
+                <div class="col-8 col-md-6">
+                  <input type="range" class="form-range input-range" id="nivel-satisfacao">
+                </div>
+                <div class="col-2 col-md-1">
+                  <span class="input-group-text"><i class="bi bi-emoji-expressionless"></i></span>
+                </div>
+              </div>
+            </div>
+            
+            
+            <div class="form-check">
+              <input class="form-check-input mt-3" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label mt-3" for="flexCheckDefault">
+                Deseja receber novidades por e-mail?
+              </label>
+            </div>
+            <button type="button" class="btn botao-padrao w-100 p-3 fw-bold m-3 pt-3">Enviar</button>
+          </form>
+        </div>
+      </section>
+
+      <footer class="text-center">
+
+        <section class="container p-4 pb-0">
+         
+          <a class="btn" href="#!"><i class="bi bi-whatsapp"></i></a>
+          <a class="btn" href="#!"><i class="bi bi-instagram"></i></a>
+          <a class="btn" href="#!"><i class="bi bi-twitter"></i></a>
+
+        </section>
+        <div class="p-3">
+            2024 <i class="bi bi-c-circle"></i> Desenvolvido por Kamila | Projeto ficticio.
+        </div>
+
+
+      </footer>
+
+
+    </main>
+
+    <!-- canvas 1 -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-1" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Café & Bistrô</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button botao-padrao" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Café
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Com a vitrine recheada de doces, salgados, cafés tradicionais e especiais, nossa cafeteria italiana convida você a explorar uma essência única, onde cada sabor é uma viagem pelas tradições culinárias da Itália, repletas de autenticidade e paixão.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Pet Friendly
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+               Criando um ambiente onde você pode desfrutar de uma xícara de café ao lado do seu amado companheiro de quatro patas. Nós valorizamos a presença dos nossos amigos peludos e os recebemos de braços abertos, garantindo que sua experiência conosco seja compartilhada com aqueles que você mais ama, inclusive seus adoráveis pets.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Coworking
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Temos espaço adequado para trabalho, com conexão de internet de alta velocidade e instalações confortáveis para reuniões.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Canvas 2 -->
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-2" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Buffet</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse"
+              data-bs-target="#accordionEventos" aria-expanded="false" aria-controls="collapseOne">
+              Eventos
+            </button>
+          </h2>
+          <div id="accordionEventos" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Organizamos buffet com cardápios variados e personalizados para casamentos, festas de
+              aniversário e outros eventos!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse"
+              data-bs-target="#accordionCatering" aria-expanded="false" aria-controls="collapseOne">
+              Catering
+            </button>
+          </h2>
+          <div id="accordionCatering" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Oferecemos serviço de alimentação variada para coffee breaks, produções e bastidores.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  </div>
+
+  <!-- Canvas 3 -->
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-3" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Delivery</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse"
+              data-bs-target="#accordionEncomendas" aria-expanded="false" aria-controls="collapseOne">
+              Encomendas para Eventos
+            </button>
+          </h2>
+          <div id="accordionEncomendas" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Produzimos e entregamos os itens de café de nosso cardápio em grandes quantidades para seus
+              eventos! Basta entrar em contato e fazer a reserva com 72h de antecedência.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse"
+              data-bs-target="#accordionEntrega" aria-expanded="false" aria-controls="collapseOne">
+              Entrega por aplicativo
+            </button>
+          </h2>
+          <div id="accordionEntrega" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Entregamos pelos aplicativos Ifood e Rappi. Consulte nosso cardápio por lá e faça seu
+              pedido!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  </div>
+
+<!--Modal 1-->
+<div class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Bebidas Quentes</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <img src="./assets/cafe-tradicional.webp" class="w-100" alt="Xícara de café">
+      <p>O café puro é uma poesia líquida, uma fusão harmoniosa de sabores robustos e notas sutis que despertam seus sentidos a cada gole. Nossa seleção cuidadosamente selecionada de grãos premium garante que cada xícara seja uma experiência incomparável.
+        Para os amantes do café com leite, nossa mistura perfeitamente equilibrada de café expresso e leite vaporizado é uma verdadeira obra-prima de suavidade e sabor. </p> <p>  Ou que tal cappuccino? um  clássico italiano é uma verdadeira delícia para os amantes do café. Com sua espuma cremosa e aroma irresistível, é uma escolha perfeita para aqueles que apreciam uma bebida sofisticada e reconfortante. Para os que buscam um conforto decadente, nosso chocolate quente é a resposta.  Feito com chocolate rico e cremoso derretido em leite quente.
+        </p>
+      </div>
+      <div class="modal-footer mx-auto">
+        <button type="button" class="btn btn-secondary botao-padrao border-0" data-bs-dismiss="modal">Fechar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal 2-->
+<div class="modal fade" id="modal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Bebidas Geladas</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <img src="./assets/bebida-gelada.png" class="w-100" alt="Copo de milkshake">
+      <p>Nossa seleção de bebidas geladas é uma celebração da criatividade, destinada a refrescar seus sentidos e alegrar seu dia.
+        Experimente nosso Milkshake de Chocolate Supremo, uma indulgência cremosa e rica que combina o sabor intenso do chocolate com a suavidade do sorvete de baunilha. Ou explore o refrescante Milkshake de Morango Silvestre, uma mistura irresistível de morangos frescos e sorvete cremoso.
+      </p>
+      <p>Para os amantes do café, oferecemos o nosso Frappé de Café Gelado, uma obra-prima de café expresso resfriado, leite gelado e uma pitada de açúcar, tudo misturado até a perfeição para criar uma textura suave e cremosa que vai revigorar seus sentidos.</p>
+      </div>
+      <div class="modal-footer mx-auto">
+        <button type="button" class="btn btn-secondary botao-padrao border-0" data-bs-dismiss="modal">Fechar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal 3-->
+<div class="modal fade" id="modal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Doces</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <img src="./assets/doces.png" class="w-100" alt="Macarons variados">
+      <p>Delicie-se com uma variedade de doces cuidadosamente preparados, criados para adoçar seus momentos especiais. Explore a leveza e a sofisticação dos nossos macarons em uma variedade de sabores exuberantes. De frutas tropicais a chocolates indulgentes.
+      </p>
+      <p>Deleite-se com o clássico Tiramisù, uma mistura indulgente de biscoitos embebidos em café, creme de queijo mascarpone e cacau em pó, que derrete na boca em uma explosão de sabor. Experimente a indulgência das Zeppole, bolinhas de massa fritas e polvilhadas com açúcar em pó, uma escolha perfeita para quem busca um sabor autêntico da Itália.</p>
+      </div>
+      <div class="modal-footer mx-auto">
+        <button type="button" class="btn btn-secondary botao-padrao border-0" data-bs-dismiss="modal">Fechar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal 4-->
+<div class="modal fade" id="modal-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Salgados</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <img src="./assets/produtos-croissant.png" class="w-100" alt="Croissant">
+      <p>Comece seu dia com um croissant fresco e crocante, recheado com uma variedade de opções deliciosas, desde queijo e presunto até chocolate e amêndoas. Além dos croissants, oferecemos uma seleção de salgados italianos tradicionais que são verdadeiras obras-primas de sabor e tradição. 
+      </p>
+      <p>Delicie-se com as Focaccias, pães achatados e macios cobertos com uma variedade de ingredientes saborosos, como azeitonas, tomates secos, queijo e ervas aromáticas. Descubra a tentação irresistível dos Arancini, bolinhos de arroz recheados com queijo, molho de tomate e ervas, fritos até ficarem dourados e crocantes por fora e irresistivelmente cremosos por dentro.</p>
+      </div>
+      <div class="modal-footer mx-auto">
+        <button type="button" class="btn btn-secondary botao-padrao border-0" data-bs-dismiss="modal">Fechar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
